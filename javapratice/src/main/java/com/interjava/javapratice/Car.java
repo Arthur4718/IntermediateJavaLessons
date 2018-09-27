@@ -6,6 +6,8 @@ public class Car {
     private int numberOfSeats = 5; // It is wise to use private variables
     private String mInterior; // Since its private we need a get or set method
 
+    private static int ageToDrive = 21; // A static variable is shared amongst all objects of the class and it cannot be changed
+
     public Car(){
         //Constructor Method
         //Additional constructions to construct the object
@@ -35,6 +37,14 @@ public class Car {
 
     public String drive(double milesPerHour){
         return "Car is Moving";
+
+    }
+
+    public static void drivingRules(){
+        //Static methos dont need to be called by objects
+        //Instead then can be called from the class itslef
+        //For ie Toast.Maketext its a static method, since whe dont need to create a toast object
+        System.out.println("You should not dring and drive!");
 
     }
 }

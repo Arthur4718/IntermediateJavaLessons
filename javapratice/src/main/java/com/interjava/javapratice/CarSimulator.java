@@ -16,10 +16,14 @@ public class CarSimulator {
 
         System.out.println("my car has " + myFusquinha.getNumberOfSeats() + " seats");
 
-        Car myHonda = new Car();
+        Car myHonda = new Car(); // black constructor example
 
         System.out.println("My Honda has " + myHonda.colour + " colour and its interior is " + myHonda.getInterior());
 
         myHonda.drive();
+
+        Car.drivingRules(); // Static method example
+
+
     }
 }
